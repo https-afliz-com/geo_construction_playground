@@ -3,9 +3,12 @@ import Compass from './Compass';
 import CompassRuler from './compassRuler';
 import IsoscelesRightTriangle from './isoscelesRightTriangle';
 import Compass2 from './Compass2';
+import ArcPath from './ArcPath';
 
 function App() {
   return (
+   <>
+   <ArcPath width={200} height={200} />
       <div className="App">
        <h1>Compass Ruler</h1>
        <CompassRuler />
@@ -23,6 +26,7 @@ function App() {
           scale={1.5} 
           rotation={45}/>
      </div>
+     </>
   );
 }
 
